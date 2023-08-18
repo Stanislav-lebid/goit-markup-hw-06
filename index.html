@@ -78,16 +78,111 @@
           </button>
         </div>
       </section>
-      <!-- Модальне вікно -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-icon-button" data-modal-close type="button"> 
-            <svg class="modal-icon-close">
-              <use href="./images/SVG/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
+          <!-- Модальне вікно -->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-icon-button" data-modal-close type="button"> 
+                <svg class="modal-icon-close">
+                  <use href="./images/SVG/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+              <form class="form-field" name="main-form" autocomplete="on">
+                <div class="form-field-main">
+                  <div class="form-field-name">
+                    <label 
+                    class="form-label" 
+                    for="name">
+                    Имя
+                  </label>
+                  <div class="form-input-icon">
+                    <input 
+                    class="form-input" 
+                    id="name" 
+                    type="text" 
+                    name="name"
+                    >
+                    <svg class="form-field-icon">
+                      <use href="./images/SVG/sprite.svg#icon-person-black"></use>
+                    </svg>
+                  </div>
+                  </div>
+                  <div class="form-field-tel">
+                    <label 
+                    class="form-label" 
+                    for="tel">
+                    Телефон
+                  </label>
+                  <div class="form-input-icon">
+                    <input 
+                    class="form-input" 
+                    id="tel" 
+                    type="tel" 
+                    name="tel"
+                    >
+                    <svg class="form-field-icon">
+                      <use href="./images/SVG/sprite.svg#icon-phone-black"></use>
+                    </svg>
+                  </div>
+                  </div>
+                  <div class="form-field-email">
+                    <label 
+                    class="form-label" 
+                    for="email">
+                    Почта
+                  </label>
+                  <div class="form-input-icon">
+                    <input 
+                    class="form-input" 
+                    id="email" 
+                    type="email" 
+                    name="email"
+                    >
+                    <svg class="form-field-icon">
+                      <use href="./images/SVG/sprite.svg#icon-email-black"></use>
+                    </svg>
+                  </div>
+                  </div>
+                  <div class="form-field-text-area">
+                    <label class="form-label" for="text-area">
+                      Коментарий
+                    </label>
+                    <textarea 
+                      class="form-text-area" 
+                      name="coment"
+                      id="text-area"  
+                      rows="5"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-allow">
+                  <div class="form-allow-group">
+                    <input 
+                    class="form-allow-input visually-hidden"
+                    type="checkbox" 
+                    id="allow" 
+                    name="allow">
+                    <svg class="form-allow-icon">
+                      <use href="./images/SVG/sprite.svg#icon-check"></use>
+                    </svg>
+                  </div>
+                  <label 
+                    class="form-allow-label"
+                    for="allow">
+                    Соглашаюсь с рассылкой и принимаю 
+                    <span class="form-allow-span">
+                      <a class="form-allow-link" href="#"> Условия договора
+                      </a>
+                    </span> 
+                  </label>
+                </div>
+                <div class="form-button">
+                  <button class="form-button-submit" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
       <!-- Наші переваги -->
       <section class="container-default-padding">
         <div class="container">
